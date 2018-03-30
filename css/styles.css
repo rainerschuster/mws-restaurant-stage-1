@@ -295,3 +295,12 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+.review-date {
+  float: right;
+}
+
+.review-rating {
+  background-color: orange;
+  color: #fff;
+}
