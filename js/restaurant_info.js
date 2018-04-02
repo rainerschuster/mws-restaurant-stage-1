@@ -118,11 +118,11 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 createReviewHTML = (review) => {
   const article = document.createElement('div');
   article.innerHTML = `
-  <article>
-    <h1>
-      <span>${review.name}</span><span class="review-date">${review.date}</span>
+  <article class="review">
+    <h1 class="review-header">
+      <span class="review-name">${review.name}</span><span class="review-date">${review.date}</span>
     </h1>
-    <p class="review-rating">Rating: ${review.rating}</p>
+    <p><span class="review-rating">Rating: ${review.rating}</span></p>
     <p>${review.comments}</p>
   <article>`;
 
